@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  transition: background-color 0.5s ease-in-out;
+}
+body.red {
+  background-color: #ef4444;
+}
+body.blue {
+  background-color: #3b82f6;
+}
+body.green {
+  background-color: #10b981;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 9999px;
+  padding: 0.3rem;
+}
+
+.tab-btn {
+  flex: 1;
+  border: none;
+  background: none;
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 9999px;
+  cursor: pointer;
+}
+.tab-btn.active {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.timer {
+  text-align: center;
+  margin: 2rem 0;
+}
+.timer h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  color: white;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.start {
+  padding: 0.75rem 2rem;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  border-radius: 12px;
+  background-color: white;
+  color: #ef4444;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.start:hover {
+  background-color: #f3f3f3;
+}
+
+.reset {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
