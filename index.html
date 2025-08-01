@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pomodoro Timer</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.7.77/Tone.js"></script>
+</head>
+<body id="body" class="red">
+
+  <div class="container">
+    <div class="card">
+      <!-- Tabs -->
+      <div class="tabs">
+        <button id="pomodoroBtn" class="tab-btn active">Pomodoro</button>
+        <button id="shortBreakBtn" class="tab-btn">Short Break</button>
+        <button id="longBreakBtn" class="tab-btn">Long Break</button>
+      </div>
+
+      <!-- Timer -->
+      <div class="timer">
+        <h1 id="timerDisplay">25:00</h1>
+      </div>
+
+      <!-- Controls -->
+      <div class="controls">
+        <button id="startPauseBtn" class="start">Start</button>
+        <button id="resetBtn" class="reset">
+          🔄
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
